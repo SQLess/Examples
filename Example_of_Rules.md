@@ -14,8 +14,6 @@ fromClause : FROM tableSources WHERE ID IS NOT decimalLiteral
 
 <img src="https://github.com/SQLess/Examples/assets/153704279/1a39f5c1-21a0-4418-a950-5fc5d022c337" width="50%" />
 
-![image](https://github.com/SQLess/Examples/assets/153704279/1a39f5c1-21a0-4418-a950-5fc5d022c337)
-
 
 Some rules added by the adaptive parser in the SQLRight dataset for SQLite are as follows:
 
