@@ -12,7 +12,8 @@ SQLess begins by identifying the node where the parsing failed, which is the fro
 fromClause : FROM tableSources WHERE ID IS NOT decimalLiteral
 ```
 
-<img src="C:\Users\17246\AppData\Roaming\Typora\typora-user-images\image-20240208153922807.png" alt="image-20240208153922807" style="zoom:67%;" />
+![image](https://github.com/SQLess/Examples/assets/153704279/90ecd5a5-137a-411b-a40c-db2616d782bf)
+
 
 Some rules added by the adaptive parser in the SQLRight dataset for SQLite are as follows:
 
