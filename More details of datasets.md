@@ -4,7 +4,8 @@
 
 The datasets derived from PINOLO and SQLRight tools have been meticulously analyzed, yielding detailed statistics that shed light on the complexity and structure of the SQL queries within. Specifically, the **AvgC** (Average Clauses) and **AvgA** (Average Aliases) metrics offer insights into the intricacies of the queries.
 
-![image-20240208120800934](More details of datasets.assets/image-20240208120800934.png)
+![image](https://github.com/SQLess/Examples/assets/153704279/66d4dd6a-39e3-4a7e-95ed-1274d14a4221)
+
 
 **AvgC (Average Clauses)**
 
