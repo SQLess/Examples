@@ -23,30 +23,3 @@ These datasets are rich in variety, incorporating numerous clause types such as 
 
 
 
-```
-# Based on the provided table, we will calculate the averages for AvgC and AvgA for both PINOLO and SQLRight datasets.
-
-# Data from the table
-pinolo_data = {
-    'MySQL': {'ALLN': 8934, 'AvgT': 185.2, 'MaxT': 538, 'AvgC': 17.95, 'AvgA': 21.03},
-    'MariaDB': {'ALLN': 18507, 'AvgT': 152.2, 'MaxT': 517, 'AvgC': 15.36, 'AvgA': 18.96},
-    'Oceanbase': {'ALLN': 1777, 'AvgT': 190.5, 'MaxT': 464, 'AvgC': 19.10, 'AvgA': 22.50},
-    'TiDB': {'ALLN': 3523, 'AvgT': 165.6, 'MaxT': 490, 'AvgC': 16.43, 'AvgA': 19.34}
-}
-
-sqlright_data = {
-    'PostgreSQL': {'ALLN': 35, 'AvgT': 42.9, 'MaxT': 128, 'AvgC': 4.08, 'AvgA': 2.00},
-    'SQLite': {'ALLN': 143, 'AvgT': 48.7, 'MaxT': 153, 'AvgC': 4.03, 'AvgA': 4.27}
-}
-
-# Calculate the weighted averages for AvgC and AvgA for PINOLO dataset
-pinolo_weighted_avgC = sum([data['AvgC'] * data['ALLN'] for data in pinolo_data.values()]) / sum([data['ALLN'] for data in pinolo_data.values()])
-pinolo_weighted_avgA = sum([data['AvgA'] * data['ALLN'] for data in pinolo_data.values()]) / sum([data['ALLN'] for data in pinolo_data.values()])
-
-# Calculate the weighted averages for AvgC and AvgA for SQLRight dataset
-sqlright_weighted_avgC = sum([data['AvgC'] * data['ALLN'] for data in sqlright_data.values()]) / sum([data['ALLN'] for data in sqlright_data.values()])
-sqlright_weighted_avgA = sum([data['AvgA'] * data['ALLN'] for data in sqlright_data.values()]) / sum([data['ALLN'] for data in sqlright_data.values()])
-
-pinolo_weighted_avgC, pinolo_weighted_avgA, sqlright_weighted_avgC, sqlright_weighted_avgA
-```
-
