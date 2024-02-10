@@ -4,7 +4,7 @@
 
 When augmenting the grammar file of an adaptive parser, our approach encompasses not only the incorporation of dialect-specific elements but also the introduction of both terminal and non-terminal symbols. We employ an error recovery mechanism that identifies the topmost rule in the parse stack that failed to parse correctly. It's important to note that while the rule itself fails, some of its sub-rules may successfully parse. Consequently, when we add productions to our grammar, we might also introduce new non-terminal symbols.
 
-Take, for example, the query `SELECT ALL ( c3 = 1 )::int  AS countt FROM v2` ;. The phrase IS NOT represents a dialect-specific construct unique to SQLite. The parsing tree for this query is illustrated in the provided diagram.
+Take, for example, the query `SELECT * FROM t1 WHERE id IS NOT 2` ;. The phrase IS NOT represents a dialect-specific construct unique to SQLite. The parsing tree for this query is illustrated in the provided diagram.
 
 SQLess begins by identifying the node where the parsing failed, which is the fromClause in this instance. As observed, the subtree tableSources beneath fromClause is a non-terminal. The rule added to achieve this was:
 
